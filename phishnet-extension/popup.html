@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PhishNet</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      padding: 16px;
+      width: 340px;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #1a73e8;
+      font-size: 22px;
+      display: flex;
+      align-items: center;
+    }
+
+    h2::before {
+      content: "🛡️";
+      margin-right: 8px;
+    }
+
+    button {
+      background-color: #1a73e8;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      width: 100%;
+      font-size: 15px;
+      margin-top: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    button:hover {
+      background-color: #0f5dc1;
+    }
+
+    #result {
+      margin-top: 16px;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 14px;
+      white-space: pre-wrap;
+      background-color: #ffffff;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+      max-height: 400px;
+      overflow-y: auto;
+    }
+
+    .safe {
+      color: #00aa55;
+    }
+
+    .suspicious {
+      color: #ff9500;
+    }
+
+    .malicious {
+      color: #d93025;
+    }
+
+    .loading {
+      color: #555;
+    }
+
+    .alert-popup {
+      position: fixed;
+      bottom: 12px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 14px;
+      color: white;
+      font-weight: bold;
+      z-index: 9999;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      animation: fadeInOut 5s ease-in-out;
+    }
+
+    .alert-popup.safe {
+      background-color: #00aa55;
+    }
+
+    .alert-popup.suspicious {
+      background-color: #ff9500;
+    }
+
+    .alert-popup.malicious {
+      background-color: #d93025;
+    }
+
+    @keyframes fadeInOut {
+      0% { opacity: 0; bottom: 0; }
+      10% { opacity: 1; bottom: 12px; }
+      90% { opacity: 1; bottom: 12px; }
+      100% { opacity: 0; bottom: 0; }
+    }
+  </style>
+</head>
+<body>
+  <h2>PhishNet</h2>
+  <button id="scan-btn">🔎 Scan This Page</button>
+
+  <!-- Result Display -->
+  <div id="result" class="loading">Click the button to scan the current page.</div>
+
+  <!-- Popup Alert Area -->
+  <!-- This div will be dynamically injected by popup.js -->
+  
+  <script src="popup.js"></script>
+</body>
+</html>
