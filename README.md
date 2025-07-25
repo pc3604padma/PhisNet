@@ -116,9 +116,9 @@ VirusTotal for security data
 
 WHOIS XML API for domain intelligence
 
-Tema Members :
+👉Team  Members :
 
-A huge shout out to the team mates who made it real!!!
+🗣️A huge shout out to the team mates who made it real!!!
 
 
 padmanathan C - https://github.com/pc3604padma
