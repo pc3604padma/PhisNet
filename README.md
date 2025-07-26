@@ -93,7 +93,7 @@ Click Load Unpacked → Select the PhishNet folder
 🛠️ Setup
 > ⚠️ **Important:** This project does not include an OpenAI API key.  
 > You must [get your own API key](https://platform.openai.com/) and add it in your local `.env` file.
-> Use your Owm Virus Total API key and other keys used in the code.
+> Use your Own Virus Total API key and other keys used in the code.
 
 
 🧠 Future Plans
