@@ -2,9 +2,6 @@
 
 PhishNet is a smart and lightweight Chrome extension designed to detect phishing links using cutting-edge AI technology. With a blend of GPT-based analysis, RAG hallucination detection, VirusTotal scanning, and domain intelligence, PhishNet protects users in real-time while browsing the web.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/padmanathan-c-070251316/)
-
-
 
 ---
 
